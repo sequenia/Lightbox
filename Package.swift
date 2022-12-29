@@ -9,15 +9,11 @@ let package = Package(
             name: "Lightbox",
             targets: ["Lightbox"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0")
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "Lightbox",
-            dependencies: [
-                .product(name: "SDWebImage", package: "SDWebImage")
-            ],
+            dependencies: [],
             path: "./Source/"
         )
     ],
