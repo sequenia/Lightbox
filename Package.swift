@@ -9,13 +9,17 @@ let package = Package(
             name: "Lightbox",
             targets: ["Lightbox"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0")
+    ],
     targets: [
         .target(
             name: "Lightbox",
-            dependencies: [],
+            dependencies: [
+                .product(name: "SDWebImage", package: "SDWebImage")
+            ],
             path: "./Source/"
-            )
+        )
     ],
     swiftLanguageVersions: [.v5]
 )
