@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "Lightbox",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "Lightbox",
@@ -13,7 +14,7 @@ let package = Package(
         .target(
             name: "Lightbox",
             dependencies: [],
-            path: "Source"
+            path: "./Source/"
             )
     ],
     swiftLanguageVersions: [.v5]
